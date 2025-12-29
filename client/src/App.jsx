@@ -3,8 +3,7 @@ import axios from "axios";
 import {useDebounce} from 'react-use';
 
 import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './components/hero'
+
 import Search from './components/Search'
 import LoadingSpinner from './components/LoadingSpinner';
 import MovieCard from './components/MovieCard';
