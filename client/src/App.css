@@ -14,6 +14,7 @@
     --color-red1: #FE1413;
     --color-gray1: #F4F6F8;
     --font-poppins: Poppins,"sans-serif";
+    --background-image-hero-pattern: url("/background.avif");
 }
 @keyframes logo-spin {
   from {
@@ -44,3 +45,4 @@
     display: none;
   }
 }
+

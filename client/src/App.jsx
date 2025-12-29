@@ -9,6 +9,7 @@ import Search from './components/Search'
 import LoadingSpinner from './components/LoadingSpinner';
 import MovieCard from './components/MovieCard';
 import { getTrendingMovies, updateSearch } from './appwrite';
+import Herocard from './components/Herocard';
 
 const API_BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
@@ -73,6 +74,9 @@ loadTrendingMovies();
 
   return (
     <>
+    <main>
+      <div className='pattern'>
+ <Herocard />
     <Search searchText={searchText} setSearchText={setSearchText} />
     <div className='mx-auto max-w-7xl px-6 mt-16'>
       {trendingMovies.length > 0 && (
@@ -103,7 +107,9 @@ loadTrendingMovies();
   </div> </div></div> </ul>)}
 
    </div>
-    </>
+  </div>
+    </main>
+      </>
   )
 }
 
